@@ -105,34 +105,19 @@ Use the following node command to start the proxy. The local port, remote host a
 node proxy 8083 "domain.server.com" 443
 ```
 
-## AngularJS HTML Template cache generator (deprecated)
-When using HTML templates in an AngularJS widget is recommended to bundle minified versions of the templates in the script code. The SDK contains a script that can generate a TypeScript file called templateCache.ts that will include any HTML templates for a widget. See the sample "infor.sample.minify" for an example.
-
-The template script will generate the templateCache.ts file that must then be compiled with the TypeScript compiler (tsc).
-
+## Homepages command script
+The homepages command script performs different commands. For the help documentation use:
 ```
-node template --path "./Widgets/infor.sample.minify"
+node homepages help
+```
+### Package
+Widgets have to be bundled (if consisting of multiple .ts files) and minified before delivery. The package command can be used to build, minify and package a widget or a list of widgets.
+```
+node homepages pack "Widgets/infor.sample.helloworld"
 ```
 
 ## Minifier (deprecated)
-It is recommended to minifiy a widget as much as possible before it is delivered. In the best case scenario the widget can be minified to a zip file that only contains the manifest and a single JavaScript file. The SDK contains a script that can minify a widget using RequireJS optimization to bundle multiple script files into one file that is also minified. The script requires a build.js file in the widget directory. See the sample "infor.sample.minify" for an example.
-
-The output of the minify script is a zip file with a minified widget. The name of the zip file will include the name and version of the widget as well as the current date and time.
-
-```
- node minify --path "./Widgets/infor.sample.minify"
-```
-
-If you use the template script you must run that script as well as the TypeScript compiler before running the minify script. A full build with template generation, compilation and minification would be something like this:
-
-```
-node template --path "./Widgets/infor.sample.minify"
-tsc
-node minify --path "./Widgets/infor.sample.minify"
-```
-
-## Minifier
-Widgets have to be bundled (if consisting of multiple .ts files) and minified before delivery. The included node script "minifywidget" can be used to do so. See more information in the Developers Guide.
+Use the homepages scribe above instead. Widgets have to be bundled (if consisting of multiple .ts files) and minified before delivery. The included node script "minifywidget" can be used to do so. See more information in the Developers Guide.
 
 The output of the minifywidget script is a zip file with a minified widget. The name of the zip file will include the name and version of the widget as well as the current date and time.
 
