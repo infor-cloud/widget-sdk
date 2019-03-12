@@ -21,12 +21,14 @@ To use all parts of the Homepages Widget SDK you will need Node.js, a TypeScript
 ## Node.js dependencies
 If you want to use any of the following parts of the SDK you need to install the Node.js dependencies. If you don't plan to use any of these you can just skip this step.
 
+* Angular
+  * Angular source code and typings matching the version used for Homepages.
 * Web server
   * A simple development web server.
 * ION API Proxy
-  * A developmemt proxy for widgets the use the Infor ION API.
-* Minifier
-  * Minify scripts and HTML.
+  * A developmemt proxy for widgets that use the Infor ION API.
+* Homepages script
+  * Minify and pack widget into a production zip.
 
 ### Install with npm
 Run the following command in the Samples directory to install the Node.js dependencies.
@@ -42,14 +44,14 @@ Install.cmd
 ## Widget sample code
 To get an overview of the widget sample code you can open it in your development environment.
 
-### Visual Studio
-When using Visual Studio Community, Professional, Enterprise etc you can just open the solution file Samples/Widgets.sln. Since Visual Studio has a built-in web server (IIS Express) you can run the samples directly from Visual Studio.
-
 ### Visual Studio Code
-Start Visual Studio Code and use File > Open Folder and navigate to Samples/Widgets. 
+Start Visual Studio Code and use File > Open Folder and navigate to Samples/Widgets.
 
 ## Web server
 The SDK includes a Node.js development web server that be used for viewing sample widgets and developing widgets. The web server is optional if you have another alternative such as the web server in Visual Studio. The web server will run on http://localhost:8080 by default and serve files from the "./Widgets" directory.
+
+### Start web server in Visual Studio Code
+Start the web server in Visual Studio Code by running the build task "Start Server" (ctrl+shift+b).
 
 ### Start web server with Windows command file
 Use the StartServer.cmd command file to start the web server. Edit the command file to change the default port and path.
@@ -84,6 +86,9 @@ Use the OpenSamples.cmd command file to open the default sample in the default b
 OpenSamples.cmd
 ```
 
+## Compile samples
+Compile all the TypeScript samples in Visual Studio Code by running the build task "Typescript Watch" (ctrl+shift+b). The files are watched, and will be recompiled automatically when saved. Refresh your browser to see the changes.
+
 ## ION API Proxy
 When developing widget that use ION API you can use the included proxy. See the ION API samples in the Samples/Widgets directory for more information. You need to know the hostname and port of the ION API server to be able to configure the proxy.
 
@@ -113,14 +118,5 @@ node homepages help
 ### Package
 Widgets have to be bundled (if consisting of multiple .ts files) and minified before delivery. The package command can be used to build, minify and package a widget or a list of widgets.
 ```
-node homepages pack "Widgets/infor.sample.helloworld"
-```
-
-## Minifier (deprecated)
-Use the homepages scribe above instead. Widgets have to be bundled (if consisting of multiple .ts files) and minified before delivery. The included node script "minifywidget" can be used to do so. See more information in the Developers Guide.
-
-The output of the minifywidget script is a zip file with a minified widget. The name of the zip file will include the name and version of the widget as well as the current date and time.
-
-```
- node minifywidget --widget "infor.sample.minify"
+node homepages pack "infor.sample.helloworld"
 ```
