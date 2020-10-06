@@ -28,7 +28,7 @@ The Widget SDK is used to build widgets for [Infor Homepages](https://www.youtub
 ## What is a widget?
 A widget can be defined as a small, single-purpose application that provides quick, at-a-glance information or quick access to simple interactive functions. Widgets are simpler and faster to access than full applications (apps) that may provide more functionality.
 
-![Screenshot of a homepage with widgets](../assets/images/homepages-screenshot2.png)
+![Screenshot of a homepage with widgets](assets/images/homepages-screenshot2.png)
 
 Homepages may contain one or many pages and each page may contain one or many widgets. Widgets can be added to a page from the Widget Catalog.
 

@@ -39,7 +39,7 @@ Here are some points to consider when developing your widget with performance in
 ## Use IDS Enterprise component library
 When designing your widget, we strongly recommend using the [IDS Enterprise Components](https://github.com/infor-design/enterprise) for the UI. 
 
-![Screenshot of a IDS homepage](../assets/images/ids-screenshot.png)
+![Screenshot of a IDS homepage](assets/images/ids-screenshot.png)
 
 The IDS Enterprise Components is a framework-independent UI component library built in js and css that is pattern-focused, template-driven, touch-enabled, responsive, accessible, and themable.
 
@@ -54,7 +54,7 @@ Complex custom components should always be avoided. If custom styling or compone
 ## Theme Support
 Widgets should support the three theme variants of the IDS Subtle Theme; Light, Dark and High Contrast.  
 
-![Screenshot of a homepage in Dark Theme](../assets/images/homepages_dark-theme.png)
+![Screenshot of a homepage in Dark Theme](assets/images/homepages_dark-theme.png)
 
 The IDS Enterprise components automatically supports all theme variants. 
 
@@ -86,14 +86,14 @@ Add translations using the `localization` property in the widget manifest.
 ## Design for all widget sizes 
 A widget can be used on a page in 8 different sizes (1x1, 1x2, 1x3, 1x4, 2x1, 2x2, 2x3 and 2x4). Your widget should be runnable in all of these, meaning that all components should be visible and usable. 
 
-![Screenshot of a homepage with widgets](../assets/images/homepages_widget-sizes.png)
+![Screenshot of a homepage with widgets](assets/images/homepages_widget-sizes.png)
 
 Consider optimizing your widget for all widget sizes, by for example showing additional content when the widget is larger than 1x1, or adjusting margins, paddings and/or graphic elements when the widget is smaller to make your widget more efficient.
 
 ## Add widget screenshots
 You can add up to three PNG image files that will be shown when viewing the widget in the Widget Catalog. The screenshots helps communicate the widget's features and visual experience for your end users. 
 
-![Screenshot of Widget Catalog](../assets/images/widget-catalog_screenshots-example.png)
+![Screenshot of Widget Catalog](assets/images/widget-catalog_screenshots-example.png)
 
 Configure your screenshots by adding up to three PNG image files in the widget ZIP. 
 
@@ -114,7 +114,7 @@ Reference the images using the `screenshots` property in the widget manifest. Th
 ## Enable your widgets for Infor Go 
 Allow your users to access your widget from the Infor Go mobile application for [Android](https://play.google.com/store/apps/details?id=com.infor.go&hl=en) and [IOS](https://apps.apple.com/bs/app/infor-go/id1446388736). When running on a mobile device the widget can access native device features like GPS information and camera.
 
-![Screenshot of widget in Infor Go](../assets/images/infor-go_screenshot.png)
+![Screenshot of widget in Infor Go](assets/images/infor-go_screenshot.png)
 
 Enable your widget for Infor Go by setting the `target` property in the widget manifest to `mobile`.
 
@@ -131,7 +131,7 @@ Enable your widget for Infor Go by setting the `target` property in the widget m
 ## Build your widgets for the banner area
 A Banner widget is a widget that can be added to the banner container. The banner container is located at the top of the page directly below the page header, and always spans the entire first row. It holds between one and four banner widgets and has a background color based on the color of the page.
 
-![Screenshot of a homepage with widgets](../assets/images/homepages-screenshot.png)
+![Screenshot of a homepage with widgets](assets/images/homepages-screenshot.png)
 
 Enable your widget for the banner area by setting the `target` property in the widget manifest to `banner`.
 

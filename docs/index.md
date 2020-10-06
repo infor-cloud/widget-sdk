@@ -12,7 +12,7 @@ permalink: /
 The Homepages Widget SDK is used to develop widgets for Infor Homepages.
 {: .fs-6 .fw-300 }
 
-[Get started now](docs/getting-started){: .bg-azure-06 .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2  } [View it on GitHub](https://github.com/infor-cloud/homepages-widget-sdk){: .btn .fs-5 .mb-4 .mb-md-0 }
+[Get started now](/getting-started){: .bg-azure-06 .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2  } [View it on GitHub](https://github.com/infor-cloud/homepages-widget-sdk){: .btn .fs-5 .mb-4 .mb-md-0 }
 
 ---
 
@@ -26,7 +26,7 @@ The Widget SDK includes the Framework API, which lets you communicate with the W
 
 ## Getting Started 
 
-Head over to [Getting Started](docs/getting-started) for instructions how to start developing widgets.
+Head over to [Getting Started](/getting-started) for instructions how to start developing widgets.
 
 ---
 
