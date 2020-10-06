@@ -1,6 +1,6 @@
 # Infor Homepages Widget SDK
 This file contains a brief introduction to the Infor Homepages Widget SDK.
-Refer to the Developers Guide PDF file in the Documentation directory for more details.
+Refer to the [Homepages Widget SDK site](https://infor-cloud.github.io/homepages-widget-sdk/) or the Developers Guide PDF file in the Documentation directory for more details.
 
 ## Prerequisites
 To use all parts of the Homepages Widget SDK you will need Node.js, a TypeScript compiler and an Integrated development environment (IDE) or a Text Editor. Some of the possible alternatives are listed below.
