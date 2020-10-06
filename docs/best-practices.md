@@ -33,7 +33,7 @@ The widget should be developed with focus on speed and performance. High perform
 
 ### Further reading
 {: .no_toc }
-* [Developer's Guide](https://github.com/infor-cloud/homepages-widget-sdk/blob/master/DevelopersGuide.pdf) (Chapter 12: Homepages Widget Certification)
+* [Developer's Guide](https://github.com/infor-cloud/homepages-widget-sdk/blob/master/DevelopersGuide.pdf) (Chapter 10: ION API)
 
 ## Use IDS Enterprise component library
 When designing your widget, we strongly recommend using the [IDS Enterprise Components](https://github.com/infor-design/enterprise) for the UI. 
