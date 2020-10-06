@@ -15,18 +15,9 @@ Here are some best practices to consider when building your widgets. For further
 1. TOC
 {:toc}
 
-## Develop for speed
+## Use ION APIs to communicate with the backend
 
-When it comes to user experience, speed matters. As a site begins to load, there's a period of time where users wait for content to appear. In the case of Homepages, the user might have 10 widgets on a normal page that has to load data and these widgets are all competing for a limited set of resources. In addition, more users are accessing through mobile devices with limited CPU power and memory as well as less bandwidth speed. 
-
-Here are some points to consider when developing your widget with performance in mind: 
-
-* Use ION APIs to communicate with the backend, for example when retrieving data, or creating / updating / deleting data
-* Make sure that the initial number of requests without user interaction are as few as possible
-* Make sure that the APIs you plan to use or develop perform in a timely manner as the browser can only have a fixed set of requests in parallel
-* Only load 10-15 items in a list with an option to load more on user activity
-* Paging should be done on the server
-* Use AoT instead of Jit
+The widget should exclusively use ION APIs to communicate with the backend. For example when retrieving data, or creating / updating / deleting data.
 
 ### Further reading
 {: .no_toc }
@@ -35,6 +26,14 @@ Here are some points to consider when developing your widget with performance in
 * [Youtube playlist for ION and ION API Gateway](https://www.youtube.com/watch?v=up5ZLczEQ4c&list=PL84oLmtdP0NPmO0bLcls3E3qTf9w05_r6)
 * [ION API Admin guide](https://docs.infor.com/ionapi/12.0.x/en-us/ionapiag/default.html)
 * [ION API Github](https://github.com/infor-cloud/ion-api-sdk/blob/master/README.md)
+
+## Focus on speed and performance
+
+The widget should be developed with focus on speed and performance. High performant APIs with short response times, minimizing the number of requests as well as data size and the number of items retrieved to a set of 10-15 items with a max limit of 100. (Purpose built APIs for charts as client side calculations on data sets does not deliver high performance)
+
+### Further reading
+{: .no_toc }
+* [Developer's Guide](https://github.com/infor-cloud/homepages-widget-sdk/blob/master/DevelopersGuide.pdf) (Chapter 12: Homepages Widget Certification)
 
 ## Use IDS Enterprise component library
 When designing your widget, we strongly recommend using the [IDS Enterprise Components](https://github.com/infor-design/enterprise) for the UI. 
