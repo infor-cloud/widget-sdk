@@ -1,0 +1,99 @@
+
+/* FONTS */
+
+@font-face {
+    font-family: 'Source Sans Pro Regular';
+    src: url('../../assets/fonts/SourceSansPro-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Source Sans Pro Light';
+    src: url('../../assets/fonts/SourceSansPro-Light.ttf') format('truetype');
+}
+
+
+/* Font variables */
+
+$body-font-family: 'Source Sans Pro Regular', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+  Roboto, 'Helvetica Neue', Arial, sans-serif;
+
+$font-regular: 'Source Sans Pro Regular', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+Roboto, 'Helvetica Neue', Arial, sans-serif;
+
+$font-light: 'Source Sans Pro Light', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+Roboto, 'Helvetica Neue', Arial, sans-serif;
+
+/* Font Classes */ 
+
+.font-regular {
+    font-family: $font-regular !important;
+}
+
+.font-light {
+    font-family: $font-light !important;
+}
+
+/* COLORS */
+
+$azure-04: #55A3F3;
+$azure-06: #0072ED;
+$azure-05: #1C86EF;
+$azure-07: #0066D4;
+
+$sidebar-nav-hover: #e1f3fe;
+
+.bg-azure-06 {
+    background-color: $azure-06 !important;
+    background-image: linear-gradient($azure-04, $azure-06) !important;
+}
+
+.bg-azure-06:hover {
+    background-color: $azure-07 !important;
+    background-image: linear-gradient($azure-05, $azure-07) !important;
+}
+
+/* HYPERLINKS */
+
+$link-color: $azure-06;
+
+/* BUTTONS */
+
+.btn {
+    border-radius: 2px !important;
+    padding: 6px 30px !important;
+    -webkit-transition: all 300ms ease-out;
+    -moz-transition: all 300ms ease-out;
+    -o-transition: all 300ms ease-out;
+    transition: all 300ms ease-out;
+    font-family: $font-regular !important;
+}
+
+/* TYPOGRAPHY */
+
+h1, p, ul, ol {
+    font-family: $font-light !important;
+}
+
+/* SIDEBAR MENU */
+
+// Increase padding and font size 
+.nav-list .nav-list-item .nav-list-link {
+    padding-top: 0.5em !important;
+    padding-bottom: 0.5em !important;
+    font-size: 1.1em !important;
+    background-image: none !important;
+    color: #252429 !important;
+}
+
+// Change hover color
+.nav-list .nav-list-item .nav-list-link:hover {
+    background-image: none !important;
+    background-color: $sidebar-nav-hover !important; 
+}
+
+.nav-list .nav-list-item .nav-list-link.active {
+    background-image: none !important;
+    background-color: none !important;
+    border-left: 1px solid #0075e9 !important;
+    color: $azure-06 !important;
+}
