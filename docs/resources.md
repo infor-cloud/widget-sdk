@@ -13,11 +13,17 @@ nav_order: 5
 * [HTML](https://www.w3schools.com/html/)
 * [CSS](https://www.w3schools.com/css/default.asp)
 * [TypeScript](https://www.typescriptlang.org/)
-* [Angular](https://angular.io/)
 * [jQuery](https://www.w3schools.com/jquery/)
 
 ### Editors
 * [Visual Studio Code (free)](https://code.visualstudio.com/)
+
+### Angular
+* [Angular](https://angular.io/)
+* [Angular JS support](https://angular.io/guide/upgrade)
+* [AOT compiler](https://angular.io/guide/upgrade)
+* [AOT pitfalls](https://github.com/rangle/angular-2-aot-sandbox#aot-dos-and-donts)
+* [Template syntax](https://angular.io/guide/template-syntax)
 
 ## Getting Started
 
@@ -46,12 +52,16 @@ nav_order: 5
 * [IDS Enterprise Components](https://github.com/infor-design/enterprise)
 * [IDS Enterprise NG](https://github.com/infor-design/enterprise-ng)
 * [Widget Design Guidelines](https://design.infor.com/resources/mingle-homepage-widget-guidelines)
+* [Workspace](https://design.infor.com/guidelines/patterns/workspaces)
 
 ### ION API
 * [How to call an ION API](https://www.youtube.com/watch?v=RJCEsnzSdIM)
 * [Youtube playlist for ION and ION API Gateway](https://www.youtube.com/watch?v=up5ZLczEQ4c&list=PL84oLmtdP0NPmO0bLcls3E3qTf9w05_r6)
 * [ION API Admin guide](https://docs.infor.com/ionapi/12.0.x/en-us/ionapiag/default.html)
 * [ION API Github](https://github.com/infor-cloud/ion-api-sdk/blob/master/README.md)
+
+### Other
+* [Semantic versioning](https://semver.org/)
 
 ## Infor Go
 
