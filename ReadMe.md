@@ -1,6 +1,6 @@
 # Infor Homepages Widget SDK
 This file contains a brief introduction to the Infor Homepages Widget SDK.
-Refer to the [Homepages Widget SDK site](https://infor-cloud.github.io/homepages-widget-sdk/) or the Developers Guide PDF file in the Documentation directory for more details.
+Refer to the Developers Guide PDF file in the Documentation directory for more details.
 
 ## Prerequisites
 To use all parts of the Homepages Widget SDK you will need Node.js, a TypeScript compiler and an Integrated development environment (IDE) or a Text Editor. Some of the possible alternatives are listed below.
@@ -68,6 +68,18 @@ npm start
 npm run server
 ```
 
+**NOTE**: You can use the [`npm config`](https://docs.npmjs.com/misc/config) command to set configuration properties without modifying `package.json`. This will set and persist the property regardless of what is declared in the file.:
+```sh
+# Set the 'server_port', without modifying package.json
+npm config set InforHomepagesWidgetSDK:server_port 8888
+
+# The server will now bind to port 8888
+npm run server
+
+# Undo the above configuration
+npm config rm InforHomepagesWidgetSDK:server_port
+```
+
 ### Start web server with node
 Use one of the following node commands to start the web server. The port and path can be provided as parameters. If no parameters are specified the default port 8080 and the default path "./Widgets" will be used
 ```
@@ -102,6 +114,18 @@ StartIonApiProxy.cmd
 Use the following npm command to start the proxy. The local port, remote host and remote port can be changed in the configuration section of the package.json file, see proxy_local_port, proxy_remote_host and proxy_remote_port.
 ```
 npm run proxy
+```
+
+**NOTE**: You can use the [`npm config`](https://docs.npmjs.com/misc/config) command to set configuration properties without modifying `package.json`. This will set and persist the property regardless of what is declared in the file.:
+```sh
+# Set the 'proxy_remote_host', without modifying package.json
+npm config set InforHomepagesWidgetSDK:proxy_remote_host example.com
+
+# The proxy will forward requests to 'example.com'
+npm run proxy
+
+# Undo the above configuration
+npm config rm InforHomepagesWidgetSDK:proxy_remote_host
 ```
 
 ### Start proxy  with node
