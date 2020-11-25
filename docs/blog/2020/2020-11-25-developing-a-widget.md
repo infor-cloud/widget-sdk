@@ -29,7 +29,7 @@ Now using node v14.15.0 (npm v6.14.8)
 [VSCode](https://code.visualstudio.com) is my editor of choice for the moment, and it is the one recommended (*but not required!*) for widget developers. It is fast, configurable, and it has language support for pretty much every programming language and framework I'm working with.
 
 ### Git
-[Git](https://git-scm.com) is a fundamental part of my development workflow, whether I'm collaborating with others on shared repositories, or if I am working on personal projects offline. If nothing else, it is just nice to always be able to keep
+[Git](https://git-scm.com) is a fundamental part of my development workflow, whether I'm collaborating with others on shared repositories, or if I am working on personal projects offline. If nothing else, it is just nice to always be able to keep track of changes and easily revert them.
 
 ## Preparing the SDK
 
@@ -168,7 +168,11 @@ That doesn't look right. I can see Homepages with the "Hello World" sample widge
 ```
 Now, if I go back to the browser window:
 ![Screenshot serving Todo](/assets/images/blog/screenshot-todo-serve.png)
-It works!
+It works! Time to commit the changes:
+```bash
+$ git add ./sample.todo
+$ git commit -m "Add Todo Widget"
+```
 
 ### Adding some content
 Now that I know that everything works, I can add some content to the widget. This widget should display a Todo-list using some [IDS Components](https://github.com/infor-design/enterprise-ng), so first I'll add some imports to **todo.module.ts**:
@@ -239,6 +243,12 @@ export class TodoComponent {
 
 And here's the result:
 ![Screenshot serving Todo UI](/assets/images/blog/screenshot-todo-basic.png)
+
+Everything looks okay, and there are no compiler- or linting errors. Time to commit:
+```bash
+$ git add ./sample.todo
+$ git commit -m "Visualise tasks in Todo Widget"
+```
 
 There are lots of things we can do to improve this widget. But I'll leave it as it is for now and move on.
 
