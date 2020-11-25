@@ -1,17 +1,19 @@
 ---
-title: Getting Started
+title: Developing a Widget
 parent: 2020
 grand_parent: Blog
 nav_order: 3
 ---
 
-# Getting Started
+# Developing a Widget
 
 by Andreas Hallberg on November 25, 2020
 {: .fs-3 .text-grey-dk-000 }
 
 There are already a couple of different guides on how to get started with the Widget SDK, such as the [Developers Guide](https://github.com/infor-cloud/homepages-widget-sdk/blob/master/DevelopersGuide.pdf) and the [README](https://github.com/infor-cloud/homepages-widget-sdk/blob/master/ReadMe.md). Those should be the most up-to-date
 resources on the topic. However, for this month's blog post I thought I'd give a more practical introduction and go through the steps of downloading the SDK, and developing a very basic widget.
+
+Note that the following should be considered *an example of how I do things* rather than *a list of steps that you must follow*. With that said, let's begin.
 
 ## Prerequisites
 First, I'll prepare my machine by installing the necessary software, as [described in the README](https://github.com/infor-cloud/homepages-widget-sdk#prerequisites).
