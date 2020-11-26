@@ -77,7 +77,7 @@ I get a popup telling me to install the recommended extensions:
 - *msjsdiag.debugger-for-chrome* - Chrome Debugger
 
 The SDK is prepared with some VSCode tasks that helps with building and running the dev server. I start them with `Cmd+Shift+B` (`Ctrl+Shift+B` on Windows). There are no errors in the Terminal, so everything appears to be working:
-![Screenshot Dev Server Started]({{site.url}}/assets/images/blog/screenshot-serve-success.png).
+![Screenshot Dev Server Started]({{site.baseurl}}/assets/images/blog/screenshot-serve-success.png).
 
 ## Coding
 Now all the preparations are done, we are ready for some coding.
@@ -151,7 +151,7 @@ export const widgetFactory = (context: IWidgetContext): IWidgetInstance => {
 
 ### See if it works
 Now, my widget should be ready for a first test. The development server and compiler is already running, and since neither of them report any errors I should be able to see my widget if I start the debugger. I start it up using F5, and...
-![Screenshot serving Hello World]({{site.url}}/assets/images/blog/screenshot-helloworld-serve.png)
+![Screenshot serving Hello World]({{site.baseurl}}/assets/images/blog/screenshot-helloworld-serve.png)
 
 That doesn't look right. I can see Homepages with the "Hello World" sample widget, but not my "Todo" widget. The issue here is that I haven't told Homepages to show my widget. The way to do that is by making a final change in `index.html`:
 ```html
@@ -167,7 +167,7 @@ That doesn't look right. I can see Homepages with the "Hello World" sample widge
 </body>
 ```
 Now, if I go back to the browser window:
-![Screenshot serving Todo]({{site.url}}/assets/images/blog/screenshot-todo-serve.png)
+![Screenshot serving Todo]({{site.baseurl}}/assets/images/blog/screenshot-todo-serve.png)
 It works! Time to commit the changes:
 ```bash
 $ git add ./sample.todo
@@ -242,7 +242,7 @@ export class TodoComponent {
 ```
 
 And here's the result:
-![Screenshot serving Todo UI]({{site.url}}/assets/images/blog/screenshot-todo-basic.png)
+![Screenshot serving Todo UI]({{site.baseurl}}/assets/images/blog/screenshot-todo-basic.png)
 
 Everything looks okay, and there are no compiler- or linting errors. Time to commit:
 ```bash
