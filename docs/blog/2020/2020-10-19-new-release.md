@@ -1,6 +1,6 @@
 ---
 title: v3.1.0 released
-parent: October 2020
+parent: 2020
 grand_parent: Blog
 nav_order: 3
 ---
