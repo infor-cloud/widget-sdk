@@ -1,5 +1,5 @@
 ---
-title: v3.1.0 released
+title: v3.3.0-rc.2 released
 parent: 2021
 grand_parent: Blog
 nav_order: 3
