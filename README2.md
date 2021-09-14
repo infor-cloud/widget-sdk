@@ -89,17 +89,11 @@ node server
 node server 8080 "./Widgets"
 ```
 
-## View samples
-Once the web server is running you can view the default sample by navigating a browser to http://localhost:8080/index.html
+## Compile widgets
+Compile all the widgets in Visual Studio Code by running the build task "Typescript Watch" (ctrl+shift+b). The files are watched, and will be recompiled automatically when saved. Refresh your browser to see the changes.
 
-### View samples with Windows command file
-Use the OpenSamples.cmd command file to open the default sample in the default browser on Windows.
-```
-OpenSamples.cmd
-```
-
-## Compile samples
-Compile all the TypeScript samples in Visual Studio Code by running the build task "Typescript Watch" (ctrl+shift+b). The files are watched, and will be recompiled automatically when saved. Refresh your browser to see the changes.
+## Run widget
+Once the widgets have been compiled and the web server is running, you can run the selected widget by launching the run & debug configuration "Launch Chrome against localhost" or by manually navigating to http://localhost:8080/index.html
 
 ## ION API Proxy
 When developing widget that use ION API you can use the included proxy. See the ION API samples in the Samples/Widgets directory for more information. You need to know the hostname and port of the ION API server to be able to configure the proxy.
