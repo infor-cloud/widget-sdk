@@ -7,7 +7,7 @@ nav_order: 2
 # Getting Started
 {: .no_toc }
 
-This page gives a brief overview to getting started with the Homepages Widget SDK. For detailed instructions, please refer to the [Developer's Guide](https://github.com/infor-cloud/homepages-widget-sdk/blob/master/DevelopersGuide.pdf).
+This page gives a brief overview to getting started with the Widget SDK. For detailed instructions, please refer to the [Developer's Guide](https://github.com/infor-cloud/homepages-widget-sdk/blob/master/DevelopersGuide.pdf).
 
 
 ## Table of contents
@@ -41,7 +41,7 @@ For instructions on how to install a Tenant Widget, please see [Support & FAQ](s
 
 ## Download the Widget SDK
 
-The latest Widget SDK deliverable can be found on the [Homepages Widget SDK GitHub page](https://github.com/infor-cloud/homepages-widget-sdk).
+The latest Widget SDK deliverable can be found on the [Widget SDK GitHub page](https://github.com/infor-cloud/widget-sdk).
 
 ### What's Included
 {: .no_toc }
@@ -51,7 +51,7 @@ The Widget SDK zip file includes documentation (Developer's Guide and a Framewor
 ### Dependencies
 {: .no_toc }
 
-To use all parts of the Homepages Widget SDK you will need [Node.js](https://nodejs.org/en/), a [TypeScript compiler](http://www.typescriptlang.org/) and an [Integrated development environment or a Text Editor](https://code.visualstudio.com/). 
+To use all parts of the Widget SDK you will need [Node.js](https://nodejs.org/en/), a [TypeScript compiler](http://www.typescriptlang.org/) and an [Integrated development environment or a Text Editor](https://code.visualstudio.com/). 
 
 ## Install Node.js dependencies
 
