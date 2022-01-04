@@ -1,9 +1,9 @@
-# Infor Homepages Widget SDK
-This file contains a brief introduction to the Infor Homepages Widget SDK.
+# Infor Widget SDK
+This file contains a brief introduction to the Infor Widget SDK.
 Refer to the Developers Guide PDF file in the Documentation directory for more details.
 
 ## Prerequisites
-To use all parts of the Homepages Widget SDK you will need Node.js, a TypeScript compiler and an Integrated development environment (IDE) or a Text Editor. Some of the possible alternatives are listed below.
+To use all parts of the Widget SDK you will need Node.js, a TypeScript compiler and an Integrated development environment (IDE) or a Text Editor. Some of the possible alternatives are listed below.
 
 * Node.js
   * https://nodejs.org/en/
@@ -138,3 +138,4 @@ Widgets have to be bundled (if consisting of multiple .ts files) and minified be
 ```
 node homepages pack "infor.sample.helloworld"
 ```
+
