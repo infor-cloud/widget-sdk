@@ -73,14 +73,35 @@ Add translations using the `localization` property in the widget manifest.
 ```
 "localization": { 
     "en-US": { 
-        "widgetTitle": "Hello World", 
-        "widgetDescription": "Hello World Sample Widget." 
+        "widgetTitle": "Announcements", 
+        "widgetDescription": "Displays the latest announcements that require your 
+        attention. You can use the widget options to control how long each 
+        announcement is displayed and to animate the content when the announcements 
+        are switched. A maximum of 15 announcements can be displayed in the widget. 
+        \r\n\r\nA user with the role HOMEPAGES-ContentAdministrator manages the 
+        priority, layout, content, schedule, and audience for each announcement in 
+        the Homepages administration pages." 
     } 
 }
 ```
 ### Further reading
 {: .no_toc }
 * [Developer's Guide](https://github.com/infor-cloud/homepages-widget-sdk/blob/master/DevelopersGuide.pdf) (Chapter 3: Widgets > Widget manifest > Optional manifest properties > **Localization**, Chapter 7: Localization)
+
+## Formulating widgetTitle and widgetDescription
+It is important to follow certain guidelines of the IDS team and other limitations when writing a  widget description or widget title.
+
+### widgetTitle
+
+A widget title should be short, direct and give an idea of the widgets purpose.
+
+Must not contain more than 40 character, this is even after translations so be wary if you reach close to 40 characters and plan to translate the title.
+
+In most cases, do not add a prefix to the widget title such as the product names etc. This should instead be added in the widgets description.
+### widgetDescription
+Do not write "This widget" or variants of it like "This app".
+
+Must not contain more than 1024 characters, note that even if a description can have 1024 characters, there is still a limit to how much text that can be displayed in the widget catalog thumbnail. (Widget details in catalog will always show full description). 
 
 ## Design for all widget sizes 
 A widget can be used on a page in 8 different sizes (1x1, 1x2, 1x3, 1x4, 2x1, 2x2, 2x3 and 2x4). Your widget should be runnable in all of these, meaning that all components should be visible and usable. 
@@ -154,6 +175,12 @@ Configure the link by adding the `helpUrl` property in the widget manifest.
 ```
 "helpUrl": "http://www.example.com/" 
 "helpUrl": "{Scheme}://{Hostname}:{Port}/{TenantId}/MyApp/Help"
+"helpUrl": https://docs.infor.com/mingle/12.0.x/{Language|lower}/minceolh/default.html?helpcontent=jho1449259087119.html
+
+```
+The last example would equate to the following url when english is set as the language:
+```
+https://docs.infor.com/mingle/12.0.x/en-us/minceolh/default.html?helpcontent=jho1449259087119.html
 ```
 
 ### Further reading
