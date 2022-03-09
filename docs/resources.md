@@ -28,7 +28,7 @@ nav_order: 5
 ## Getting Started
 
 ### Download the Widget SDK
-* [Homepages Widget SDK on GitHub](https://github.com/infor-cloud/homepages-widget-sdk/)
+* [Widget SDK on GitHub](https://github.com/infor-cloud/homepages-widget-sdk/)
 
 ### Dependencies
 * [TypeScript](https://design.infor.com/)
