@@ -1,7 +1,7 @@
 
 # Basic config
-title: Homepages Widget SDK
-description: Homepages Widget SDK documentation.
+title: Widget SDK
+description: Widget SDK documentation.
 remote_theme: pmarsceill/just-the-docs
 color_scheme: light-theme
 
@@ -10,8 +10,8 @@ logo: "/assets/images/logo.svg"
 
 # Aux links for the upper right navigation
 aux_links:
-  "Homepages Widget SDK on GitHub":
-    - "//github.com/infor-cloud/homepages-widget-sdk"
+  "Widget SDK on GitHub":
+    - "//github.com/infor-cloud/widget-sdk"
 
 # Enable search
 search_enabled: true
@@ -31,4 +31,4 @@ last_edit_time_format: "%b %e %Y at %I:%M %p" # uses ruby's time format: https:/
 # Footer "Edit this page on GitHub" link text
 gh_edit_link: true # show or hide edit this page link
 gh_edit_link_text: "Edit this page on GitHub."
-gh_edit_repository: "https://github.com/infor-cloud/homepages-widget-sdk" # the github URL for your repo
+gh_edit_repository: "https://github.com/infor-cloud/widget-sdk" # the github URL for your repo
