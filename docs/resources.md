@@ -55,7 +55,6 @@ nav_order: 5
 * [Workspace](https://design.infor.com/guidelines/patterns/workspaces)
 
 ### ION API
-* [How to call an ION API](https://www.youtube.com/watch?v=RJCEsnzSdIM)
 * [Youtube playlist for ION and ION API Gateway](https://www.youtube.com/watch?v=up5ZLczEQ4c&list=PL84oLmtdP0NPmO0bLcls3E3qTf9w05_r6)
 * [ION API Admin guide](https://docs.infor.com/ionapi/12.0.x/en-us/ionapiag/default.html)
 * [ION API Github](https://github.com/infor-cloud/ion-api-sdk/blob/master/README.md)
